@@ -1,5 +1,15 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'Acme Dashboard',
+  },
+  description: 'A dashboard built with Next.js and Tailwind CSS',
+  metadataBase: new URL('https://nextjs-playground-orcin-beta.vercel.app'),
+};
 
 export default function RootLayout({
   children,
